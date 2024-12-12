@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.collection-section,
+.favorites-section {
+  margin-top: 30px;
+}
+
+#collection,
+#favorites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card,
+.favorite-card {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img,
+.favorite-card img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.favorite-card {
+  border-color: #28a745;
+}
+
+#sum {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.favorite-card button {
+  background-color: #dc3545; /* Red background for remove button */
+  font-size: 14px;
+}
+
+.favorite-card button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 90%;
+    width: 90%;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .collection-section,
+  .favorites-section {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    max-width: 45%;
+    width: 45%;
+  }
+
+  button {
+    width: auto;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card {
+    max-width: 30%;
+    width: 30%;
+  }
+}

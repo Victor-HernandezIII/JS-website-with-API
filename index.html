@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digimon Collection</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Digimon Collection</h1>
+      <div id="sum"></div>
+
+      <div class="collection-section">
+        <h2>Collection</h2>
+        <button onclick="toggleSort()">Sort Collection A-Z</button>
+        <div id="collection"></div>
+      </div>
+
+      <div class="favorites-section">
+        <h2>Favorites</h2>
+        <h3 id="sumFav"></h3>
+        <button onclick="sortFavorites()">Sort Favorites A-Z</button>
+        <div id="favorites"></div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
